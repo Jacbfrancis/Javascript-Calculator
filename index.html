@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Calculator</title>
+  <!-- Tailwind Stylesheet -->
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center h-screen text-white bg-[#ECECEC]"> <!-- Center Page Content Vertically--->
+
+  <main>
+    <!-- Display Area -->
+    <section class= "bg-[#34474D] w-80 rounded-t-3xl">
+      <div class="flex justify-between items-center px-6 pt-4">
+        <h1 class="text-xl font-bold">Calculator</h1>
+        <img class="w-4 visible" src="./images/more-icon.png" alt="more_icon">
+      </div>
+        <div class="flex flex-col justify-end items-end px-8 py-12 text-3xl">
+          <div class="font-semibold" id="calculator-display">0</div>
+          <div class="font-normal opacity-80 invisible" id="answer-screen">0</div>
+        </div>
+    </section>
+
+    <!-- Keypad buttons -->
+    <section class="bg-[#17212A] w-80 rounded-b-3xl">
+      <div class="grid grid-cols-4 pb-7 text-xl">
+        <button data-clear-all>AC</button>
+        <button data-delete>&#9003</button>
+        <button id="change-theme">&#9881</button>
+        <button value="/" class="center-btn">&#247</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button value="*" class="center-btn">&#XD7</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button value="-" class="center-btn">&#8722</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button value="+" class="center-btn">&#X2B</button>
+        <button data-number>00</button>
+        <button data-number>0</button>
+        <button data-number>.</button>
+        <button data-equals class="p-5 bg-[#FF6531] text-white w-1/3 h-1/2 m-auto rounded-full flex justify-center items-center">&#X3D</button>
+      </div>
+    </section>
+    <h3 class="text-[#34474D] mt-5 font-bold text-center">© Made By Jacob Francis</h3>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
