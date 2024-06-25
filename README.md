@@ -16,7 +16,7 @@ This is a simple calculator built using JavaScript. The calculator performs basi
 
 ### Screenshot 📷
 
-![](screenshot.png)
+![](Screenshot.png)
 
 
 ### Links
